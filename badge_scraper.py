@@ -1,3 +1,6 @@
+"""
+This Script is created by @Siddhant Lad
+"""
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
@@ -70,6 +73,7 @@ for v,w,z in zip(df1.url,df1.name,df1.email):
     for x in div:
         badgelist=remove_tags(str(x))+", "+badgelist
         paragraphs=paragraphs+(str(x))
+    #modify the if statements according to your badges which you need to look for
     if "Introduction to Kotlin" in paragraphs:
         introtokotstr="Yes"
         score=score+1
