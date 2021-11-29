@@ -17,6 +17,6 @@
 - [Have list of all participants in a .csv file](https://docs.google.com/spreadsheets/d/1gUeJaZH4WQUQoIYJ020QyDOF4M7le7-E3QC6xhmks2E/edit?usp=sharing)
 - Customize the badges according to your requirements, modify the if statements as mentioned in the comments
 - Finally, press RUN!
-- 
+
 ## Contributors
 - [Siddhant Lad](https://www.linkedin.com/in/siddhant-lad-97b4331a0/)
