@@ -14,7 +14,7 @@ GDev Profile Badge Scraper is a Google Developer Profile Web Scraper which scrap
 
 ## How to run the script?
 - Keep ChromeDriver executable file(.exe) in the same folder as the program code or in the same project folder
-- [Have list of all participants in a .csv file](https://docs.google.com/spreadsheets/d/1gUeJaZH4WQUQoIYJ020QyDOF4M7le7-E3QC6xhmks2E/edit?usp=sharing)
+- [Have list of all participants in a .csv file](https://github.com/SiddhantL/GDev-Profile-Badge-Scraper/blob/main/test.csv)
 - Customize the badges according to your requirements, modify the if statements as mentioned in the comments
 - Finally, press RUN!
 
