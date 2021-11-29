@@ -60,7 +60,7 @@ for v,w,z in zip(df1.url,df1.name,df1.email):
     datapersstr = "No"
     workmanagerstr = "No"
     score = 0
-    total = "No"
+    totals = "No"
     options = Options()
     options.headless = True
     wd = webdriver.Chrome(options=options)
@@ -74,7 +74,6 @@ for v,w,z in zip(df1.url,df1.name,df1.email):
     for x in div:
         badgelist=remove_tags(str(x))+", "+badgelist
         paragraphs=paragraphs+(str(x))
-    #modify the if statements according to your badges which you need to look for
     if "Introduction to Kotlin" in paragraphs:
         introtokotstr="Yes"
         score=score+1
@@ -139,9 +138,10 @@ for v,w,z in zip(df1.url,df1.name,df1.email):
     sql.append(sqlstr)
     datapers.append(datapersstr)
     workmanager.append(workmanagerstr)
-    if introtokotstr and firstapinasstr and buildbasiclaystr and dicerollerstr and getuip1str and getuip2str and scrolliststr and navscreenstr and navcompstr and archcomstr and navappstr and coroutinestr and displayinternetstr and sqlstr and datapersstr and workmanagerstr == "Yes":
-        total="Yes"
+    if score == 16:
+        totals="Yes"
     scores.append(score)
+    total.append(totals)
     paragraphs = paragraphs + "<br><br>"
     badges.append(badgelist)
 dict = {'Name': name,'Email':email, 'Badges': badges,'Introduction to Kotlin':introtokot,'First App in Android Studio':firstapinas,'Build Basic Layout':buildbasiclay,'Dice Roller App':diceroller,'Get User Input 1':getuip1,'Get User Input 2':getuip2,'Scroll List':scrollist,'Navigation Screen':navscreen,'Navigation Components':navcomp,'Architecture Components':archcom,'Navigation App':navapp,'Coroutine':coroutine,'Display Internet':displayinternet,'SQL':sql,'Data Persistence':datapers,'Work Manager':workmanager, 'Score Out of 16':scores,'All Badges':total}
