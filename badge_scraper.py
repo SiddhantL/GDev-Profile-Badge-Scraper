@@ -1,6 +1,7 @@
 """
 This Script is created by @Siddhant Lad
 """
+
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
@@ -147,3 +148,7 @@ dict = {'Name': name,'Email':email, 'Badges': badges,'Introduction to Kotlin':in
 df = pd.DataFrame(dict)
 df.to_csv('datasheet.csv')
 paragraphs=remove_tags(paragraphs)
+
+"""
+This Script is created by @Siddhant Lad
+"""
